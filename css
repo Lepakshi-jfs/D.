@@ -1,0 +1,20 @@
+<!--internal and inline styling-->
+<html>
+<head>
+<style>
+body{
+background-color:silver;}
+p{
+text-align:center;color:red;}
+#h1{
+color:blue;}
+.h2{
+color:yello;}
+</style>
+</head>
+<body>
+<p style="background-color:pink">this is paragraph</p>
+<h1 id="h1">this is head1</h1>
+<h2 class="h2">this is head2</h2>
+</body>
+</html>
