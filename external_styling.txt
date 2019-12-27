@@ -1,0 +1,9 @@
+<!-- external styling-->
+body{
+background-color:pink;}
+p{
+color:red;}
+h1{
+color:sienna;}
+h4{
+color:blue;}
