@@ -1,14 +1,23 @@
-package Pranavi;
+package day_5_java;
 
 public class Account {
-private int accountNumber;
+private int accNo;
 private String customerName;
-private double balance;
-public int getAccountNumber() {
-	return accountNumber;
+protected Double balance;
+public Account() {
+	super();
 }
-public void setAccountNumber(int accountNumber) {
-	this.accountNumber = accountNumber;
+public Account(int accNo, String customerName, double balance) {
+	super();
+	this.accNo = accNo;
+	this.customerName = customerName;
+	this.balance = balance;
+}
+public int getAccNo() {
+	return accNo;
+}
+public void setAccNo(int accNo) {
+	this.accNo = accNo;
 }
 public String getCustomerName() {
 	return customerName;
@@ -16,11 +25,12 @@ public String getCustomerName() {
 public void setCustomerName(String customerName) {
 	this.customerName = customerName;
 }
-public double getBalance() {
+public Double getBalance() {
 	return balance;
 }
-public void setBalance(double balance) {
+public void setBalance(Double balance) {
 	this.balance = balance;
 }
+
 
 }
