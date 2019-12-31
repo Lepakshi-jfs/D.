@@ -1,31 +1,41 @@
-package Pranavi;
-/** documentation comments */
-public class Customer {
-private static final String invalidName = "Enter Correct Name";
-private int customerId;
-private String customerName;
-private String city;
-public int getCustomerId() {
-	return customerId;
-}
-public void setCustomerId(int customerId) {
+package day5;
+
+import java.io.Serializable;
+
+public class Customer  implements Serializable{
+
+		 private int custId;
+		private String custname;
+		private double commn;
+
+		public Customer() {
+			super();		
+		}
+	public Customer(int custId, String custname, double commn) {
+			super();
+			this.custId = custId;
+			this.custname = custname;
+			this.commn = commn;
+		}
+	public int getCustId() {
+		return custId;
+	}
+	public void setCustId(int custId) {
+		this.custId = custId;
+	}
+	public String getCustname() {
+		return custname;
+	}
+	public void setCustname(String custname) {
+		this.custname = custname;
+	}
+	public double getCommn() {
+		return commn;
+	}
+	public void setCommn(double commn) {
+		this.commn = commn;
+	}
+
 	
-	this.customerId = customerId;
-}
-public String getCustomerName() {
-	if(customerName.length()<10)
-	return customerName;
-	else 
-		return invalidName;
-}
-public void setCustomerName(String customerName) {
-	this.customerName = customerName;
-}
-public String getCity() {
-	return city;
-}
-public void setCity(String city) {
-	this.city = city;
-}
 
 }
